@@ -1,0 +1,22 @@
+name: TellConsole
+main: TellConsole\Main
+version: 1.0.0
+api: [1.10.0]
+commands:
+  tc:
+    usage: /tc <message>
+    description: Tells the console the desired message
+    permission: tc.command.tc
+permissions:
+  tc:
+    default: false
+    description: Allows the player to use all of the TellConsole features
+    children:
+     tc.command:
+       default: false
+       description: Allows the player to use all of the TellConsole commands
+       children:
+         tc.command.tc:
+           default: op
+           description: Allows the player to run the TC command
+  
