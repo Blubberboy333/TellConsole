@@ -17,6 +17,6 @@ permissions:
        description: Allows the player to use all of the TellConsole commands
        children:
          tc.command.tc:
-           default: op
+           default: true
            description: Allows the player to run the TC command
   
